@@ -1,3 +1,4 @@
+<!-- VERSION 1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +11,9 @@
 
     <!-- Download javascript link -->
     <script type="text/javascript" src="https://unpkg.com/downloadjs@1.4.7/download.js"></script>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="indexDraft2.css">
 
     <!-- font and icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -42,7 +46,26 @@
         </ul>
     </div>
 
+<!-- VERSION 2 -->
+    <!-- The input page -->
+    <div class="input-page" id="input-page">
+        <div class="choose-file">
+            <div class="add-more-files">
+                <div class="inp-container">
+                    <input type="file" id="upload-file" onChange={encodeImageFileAsURL(this)} multiple accept="image/*"/>
+                    <h4 class="drop">
+                        DRAG & DROP OR
+                    </h4>
+                    <p >
+                        <i class="fa fa-file-image-o fa-5x img-icon"></i>
+                    </p>
+                    <label htmlFor="upload-file" id="custom-file">CHOOSE YOUR FILE(S)</label>
+                </div>
+            </div>
+        </div>
+    </div>
 
+<!-- VERSION 3 -->
 
 
 
