@@ -13,7 +13,7 @@
     <script type="text/javascript" src="https://unpkg.com/downloadjs@1.4.7/download.js"></script>
 
     <!-- CSS stylesheet -->
-    <link rel="stylesheet" href="indexDraft3.css">
+    <link rel="stylesheet" href="indexDraft4.css">
 
     <!-- font and icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,8 +28,8 @@
             <i class="fa fa-file-pdf-o"></i>
         </span>
         <div>
-            <button id="upload-msg" onclick={embedImages()}>UPLOAD FILES</button>
             <button id="convertBttn" onclick={embedImages()}>SAVE AS PDF</button>
+            <button id="upload-msg">UPLOAD FILES</button>
         </div>
     </div>
 
@@ -68,13 +68,35 @@
 <!-- VERSION 3 -->
 
     <!-- PDF page -->
-
-    <div class="pdf-page" id="pdf-page">
+    <div class="the-pdf-page" id="the-pdf-page">
         <div class="create-pdf" id="create-pdf">
 
-              <!-- This section shows the pdf structure
-              and wil be removed once js file created. -->
-              
+<!-- VERSION 4 -->
+            <!-- This section shows the pdf structure
+            and will be removed once js file created. -->
+
+            <div class="file-item">
+                <div class="modify">
+                    <button class="delete-btn"><i class="fa fa-trash"></i></button>
+                    <!-- Trash icon added to represent deletion of file -->
+                </div>
+                <div class="img-container">
+                    <img src="chocolate-ice-cream-cone-duckycards.jpeg" alt="img" id="img">
+                    <!-- Image icon for when user selects a image file to upload -->
+                </div>
+                <!-- The name of the file -->
+                <p id="img-name">img-name</p>
+            </div>
+            <div class="add-more-file">
+                <div class="inp-cont">
+                    <!-- This adds the 'choose file' button for users to upload -->
+                    <input type="file" id="inp" multiple accept="image/">
+                    <!-- The plus icon -->
+                    <p><i class="fa fa-plus"></i></p>
+                    <label for="inp">Add Files</label>
+                </div>
+
+            </div>
         </div>
     </div>
 
